@@ -11,6 +11,7 @@ import {makeStyles} from '@material-ui/core/styles'
 import GlobalStyles from './globalStyles';
 import trees from './images/oregontree.jpg'
 import profilePicture from './images/profileimg.jfif'
+import octupusTree from './images/octopustree.jpg'
 
 const useStyles = makeStyles({
   root:{
@@ -61,7 +62,18 @@ const useStyles = makeStyles({
     marginTop:"15%",
     position:"relative",
     display:"block",
-  }
+  },
+  secondImage:{
+    position:"absolute",
+    backgroundImage:`url(${octupusTree})`,
+    height:"100%",
+    overflow:"hidden",
+    backgroundSize:"cover",
+    backgroundRepeat:"no-repeat",
+    backgroundPosition:"center",
+    filter:"brightness(30%)",
+    backgroundAttachment:"fixed",
+  },
 });
 
 
@@ -73,11 +85,16 @@ function App() {
       <GlobalStyles/>
       <Navbar/>
       <Toolbar style={{marginTop:"-10px"}}/>
+
+
+      
+      {/*
       <Grid container className={classes.bgimg}/>
       <img alt="ProifleImage" className={classes.profileImg} src={profilePicture}></img><br></br>
       <Typography align="center" className={classes.welcomeText}>Welcome</Typography>
       <div className={classes.header}id="About"></div>
-      <Paper className={classes.paper}>
+      <Grid container className={classes.secondImage}/>
+      <Paper className={classes.paper} elevation={8}>
         <Typography align="center" variant="h5">About Me</Typography>
         <Typography>I enjoy computers and computer programming.
           I hacked my very first PSP when I was twelve, and since then I have had an interest in electronics. I discovered my interest in software
@@ -93,7 +110,7 @@ function App() {
         <Grid container>
 
         </Grid>
-      </Paper>
+      </Paper>*/}
     </ThemeProvider>
   );
 }
