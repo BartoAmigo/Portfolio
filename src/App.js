@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
-import  Grid from '@material-ui/core/Grid';
 import Navbar from './components/navbar.js'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
@@ -12,21 +12,23 @@ import GlobalStyles from './globalStyles';
 import trees from './images/oregontree.jpg'
 import profilePicture from './images/profileimg.jfif'
 import octupusTree from './images/octopustree.jpg'
+import skatepark from './images/skateparkinForest.jpg'
 
 const useStyles = makeStyles({
   root:{
   },
   bgimg:{
-    position:"absolute",
+    position:"relative",
     backgroundImage:`url(${trees})`,
-    height:"400vh",
+    height:"100vh",
     overflow:"hidden",
     scrollBehavior:"none",
     backgroundSize:"cover",
     backgroundRepeat:"no-repeat",
     backgroundPosition:"center",
-    filter:"brightness(30%) ",
+    filter:" blur(3px) brightness(30%) ",
     backgroundAttachment:"fixed",
+    transform:"translateZ(3px)",
   },
   profileImg:{
     display:"block",
@@ -64,16 +66,44 @@ const useStyles = makeStyles({
     display:"block",
   },
   secondImage:{
-    position:"absolute",
+    position:"relative",
     backgroundImage:`url(${octupusTree})`,
-    height:"100%",
+    height:"100vh",
     overflow:"hidden",
     backgroundSize:"cover",
     backgroundRepeat:"no-repeat",
     backgroundPosition:"center",
-    filter:"brightness(30%)",
+    filter:"blur(3px) brightness(30%)",
     backgroundAttachment:"fixed",
+    transform:"translateZ(3px)",
   },
+  parallaxContainer:{
+    scrollBehavior:"none",
+    width:"100%",
+    height:"100vh",
+    position:"relative",
+    transform:"translateZ(0px)",
+    backgroundColor:"rgb(0,0,0,1.0)",
+  },
+  parallaxItem:{
+    position:"absolute",
+    top:"10%",
+    color:"white",
+  },
+  thirdImage:{
+    position:"relative",
+    backgroundImage:`url(${skatepark})`,
+    height:"100vh",
+    overflow:"hidden",
+    backgroundSize:"cover",
+    backgroundRepeat:"no-repeat",
+    backgroundPosition:"center",
+    filter:"blur(3px) brightness(30%)",
+    backgroundAttachment:"fixed",
+    transform:"translateZ(3px)",
+  },
+
+
 });
 
 
@@ -85,9 +115,23 @@ function App() {
       <GlobalStyles/>
       <Navbar/>
       <Toolbar style={{marginTop:"-10px"}}/>
-
-
       
+      
+      <Grid id="About"className={classes.parallaxContainer}>
+        <Grid item className={classes.secondImage}></Grid>
+        <Grid item className={classes.parallaxItem}>Hi</Grid>
+      </Grid>
+      <Grid id="Projects"className={classes.parallaxContainer}>
+        <Grid item className={classes.bgimg}/>
+        <Grid item className={classes.parallaxItem}>
+          ODFJDFDJOJOD</Grid>
+      </Grid>
+      <Grid id="Contact"className={classes.parallaxContainer}>
+        <Grid item className={classes.thirdImage}></Grid>
+        <Grid item className={classes.parallaxItem}>Hi Kalub</Grid>
+      </Grid>
+      
+
       {/*
       <Grid container className={classes.bgimg}/>
       <img alt="ProifleImage" className={classes.profileImg} src={profilePicture}></img><br></br>
@@ -110,7 +154,9 @@ function App() {
         <Grid container>
 
         </Grid>
-      </Paper>*/}
+      </Paper>
+      */}
+
     </ThemeProvider>
   );
 }
