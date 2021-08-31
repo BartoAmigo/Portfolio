@@ -1,26 +1,13 @@
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import {makeStyles} from '@material-ui/core/styles'
-import trees from '../images/oregontree.jpg'
 import profileimg from '../images/profileimg.jfif'
 
 const useStyles = makeStyles((theme)=>({
-    backgroundImage:{
-        position:"relative",
-        backgroundImage:`url(${trees})`,
-        filter:"blur(3px) brightness(30%)",
-        backgroundAttachment:"fixed",
-        backgroundPosition:"center",
-        backgroundSize:"cover",
-        height:"50vh",
-        transform:"translateZ(3px)",
-        overflow:"hidden",
-    },
     backgroundCover:{
         position:"relative",
         height:"50vh",
         overflow:"hidden",
-        transform:"translateZ(3px)",
         backgroundColor:theme.palette.primary.main,
     },
     profileimg:{

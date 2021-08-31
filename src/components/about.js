@@ -20,9 +20,7 @@ const skills = [
     "Git",
 ];
 
-const hobbies = [
 
-]
 
 const useStyles = makeStyles((theme)=>({
 
@@ -135,7 +133,7 @@ function About(){
                             <img align="center" style={{width:"75px",height:"auto",marginBottom:"10px"}} src={schoolPhoto} alt="photoOfSanMarcos"/>
                         </Grid>
                         <Grid item>
-                            <Typography align="center" variant="h6">Bachelors in Computer Science from California State University of San Marcos.</Typography>
+                            <Typography align="center" variant="h6">Bachelors in Computer Science from California State University San Marcos.</Typography>
                         </Grid>
                     </Grid>
                 </Grid>
