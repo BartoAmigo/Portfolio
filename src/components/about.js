@@ -17,6 +17,7 @@ const skills = [
     "Python",
     "PHP",
     "AWS",
+    "Git",
 ];
 
 const hobbies = [
