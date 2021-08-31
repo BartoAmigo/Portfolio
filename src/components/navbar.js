@@ -8,19 +8,19 @@ import MenuItem from '@material-ui/core/MenuItem'
 import { makeStyles } from '@material-ui/core/styles'
 import {useState} from 'react'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme)=>({
     root:{
 
     },
     title:{
-        color:"black",
+        color:theme.palette.primary.main,
         flexGrow:1,
-        fontFamily:"monospace",
+        fontFamily:"bookman",
     },
     menuItem:{
         
     }
-});
+}));
 
 function Navbar(){
     const classes = useStyles();
@@ -38,9 +38,9 @@ function Navbar(){
     }
 
     return(
-        <AppBar elevation={0} position="fixed">
+        <AppBar elevation={7} position="sticky" color="secondary">
             <Toolbar>
-                <IconButton edge="start" onClick={handleMenu}>
+                <IconButton edge="start" onClick={handleMenu} color="primary">
                     <MenuIcon/>
                 </IconButton>
                 <Typography variant="h6" className={classes.title} align="center">
