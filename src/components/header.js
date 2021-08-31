@@ -49,7 +49,7 @@ function Header(){
             <Grid className={classes.backgroundCover}/>
             <Grid container className='foreGround' direction="column" alignItems="center" justifyContent="center">
                 <Grid item zeroMinWidth>
-                    <img className={classes.profileimg}src={profileimg}></img>
+                    <img className={classes.profileimg}src={profileimg} alt="profilePicture"></img>
                 </Grid>
                 <Grid item zeroMinWidth>
                     <Typography className={classes.title} variant="h3">Hello There</Typography>
