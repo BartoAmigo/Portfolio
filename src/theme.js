@@ -11,6 +11,9 @@ const theme = createTheme({
         text:{
             main:"#EDF5E1",
         }
+    },
+    breakpoints:{
+       
     }
 })
 

@@ -10,6 +10,8 @@ const skills = [
     "C#",
     "Linux",
     "Javascript",
+    "HTML",
+    "CSS",
     "Python",
     "SQL",
     "React",
@@ -31,7 +33,21 @@ const useStyles = makeStyles((theme)=>({
         height:"100vh",
         backgroundColor:theme.palette.secondary.main,
         [theme.breakpoints.down("xs")]:{
-            height:"200vh",
+            height:"260vh",
+        },
+        [theme.breakpoints.up(370)]:{
+            height:"180vh",
+        },
+        [theme.breakpoints.up("sm")]:{
+            height:"110vh",
+        },
+        [theme.breakpoints.up("md")]:{
+            height:"100vh",
+        }
+    },
+    subTitle:{
+        [theme.breakpoints.down("sm")]:{
+            fontSize:"20px",
         },
     },
     sectionTab:{
@@ -110,7 +126,38 @@ const useStyles = makeStyles((theme)=>({
         marginTop:"10px",
         '&>*':{
             fontSize:"18px",
-        }
+        },
+    },
+    hobbySection:{
+        position:"relative",
+        top:"250px",
+        marginLeft:"auto",
+        marginRight:"auto",
+        width:"800px",
+        '&>*':{
+            color:theme.palette.primary.main,
+        },
+        [theme.breakpoints.down("xs")]:{
+            width:"90%",
+            alignItems:"center",
+        },
+        [theme.breakpoints.down("sm")]:{
+            width:"90%",
+            alignItems:"center",
+        },
+    },
+    hobbyItem:{
+        marginTop:"10px",
+        border:`solid ${theme.palette.primary.main} 2px`,
+        borderRadius:"1%",
+        padding:"10px",
+        width:"750px",
+        [theme.breakpoints.down("xs")]:{
+            width:"90%",
+        },
+        [theme.breakpoints.down("sm")]:{
+            width:"90%",
+        },
     },
 }));
 
@@ -127,7 +174,7 @@ function About(){
                     <Typography align="center" variant="h4">About Me</Typography>
                 </Grid>
                 <Grid item container className={classes.educationSection} direction="column">
-                    <Typography variant="h6">Education</Typography>
+                    <Typography variant="h6" className={classes.subTitle}>Education</Typography>
                     <Grid item container className={classes.educationItem} justifyContent="center" alignItems="center" >
                         <Grid item xs>
                             <img align="center" style={{width:"75px",height:"auto",marginBottom:"10px"}} src={schoolPhoto} alt="photoOfSanMarcos"/>
@@ -138,7 +185,7 @@ function About(){
                     </Grid>
                 </Grid>
                 <Grid item container className={classes.skillSection} direction="column">
-                    <Typography variant="h6">
+                    <Typography variant="h6" className={classes.subTitle}>
                         Skills
                     </Typography>
                     <Grid item container className={classes.skillItemContainer}>
@@ -150,6 +197,20 @@ function About(){
                             );
                         })}
                     </Grid>
+                </Grid>
+
+                <Grid item container className={classes.hobbySection} direction="column">
+                        <Typography variant="h6" className={classes.subTitle}>
+                            Hobbies
+                        </Typography>
+                        <Grid item className={classes.hobbyItem}>
+                            <Typography align="center">
+                                I enjoy a lot of things in life. I like to code whenever I am not busy and for 
+                                a physical activity I like to skateboard. I like to travel to northern California and the northern states to hike, 
+                                and eat mysterious plants. I recenetly discovered how to make rope and there is nothing better than enjoying 
+                                nature's scenery while making rope. Oh and I like eating cheese burgers (more than the average person) . 
+                            </Typography>
+                        </Grid>
                 </Grid>
                 
             </Grid>
