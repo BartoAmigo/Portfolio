@@ -16,7 +16,6 @@ const skills = [
     "SQL",
     "React",
     "Angular",
-    "Python",
     "PHP",
     "AWS",
     "Git",
@@ -151,7 +150,7 @@ const useStyles = makeStyles((theme)=>({
         border:`solid ${theme.palette.primary.main} 2px`,
         borderRadius:"1%",
         padding:"10px",
-        width:"750px",
+        width:"790px",
         [theme.breakpoints.down("xs")]:{
             width:"90%",
         },

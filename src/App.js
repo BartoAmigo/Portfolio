@@ -6,6 +6,7 @@ import theme from './theme';
 import GlobalStyles from './globalStyles';
 import Header from './components/header'
 import About from './components/about'
+import Projects from './components/projects'
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Navbar/>
       <Header/>
       <About/>
+      <Projects/>
     </ThemeProvider>
   );
 }
