@@ -4,10 +4,8 @@ import Navbar from './components/navbar.js'
 import './App.css';
 import theme from './theme';
 import GlobalStyles from './globalStyles';
-import Header from './components/header'
-import About from './components/about'
-import Projects from './components/projects'
-
+import Headerv2 from './components/headerv2'
+import Aboutv2 from './components/aboutv2'
 
 
 function App() {
@@ -16,9 +14,8 @@ function App() {
       <CssBaseline/>
       <GlobalStyles/>
       <Navbar/>
-      <Header/>
-      <About/>
-      <Projects/>
+      <Headerv2/>
+      <Aboutv2/>
     </ThemeProvider>
   );
 }

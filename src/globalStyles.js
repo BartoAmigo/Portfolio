@@ -3,24 +3,21 @@ import { createStyles,makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles(() =>
     createStyles({
         '@global':{
-            '.parallaxContainer':{
-                position:"relative",
-                width:"100%",
-                height:"fit-content",
-                transform:"translateZ(0)",
-                backgroundColor:"black",
-                overflow:"hidden",
-                padding:0,
+            ".title":{
+                fontFamily:"Monospace",
+                fontSize:"2rem",
+                borderBottom:"solid black 2px",
+                marginBottom:"30px",
             },
-            '.foreGround':{
-                position:"absolute",
-                width:"100%",
-                top:0,
-                color:"white",
-                transform:"translateZ(1px)",
-                overflow:"hidden",
-                height:"100%",
-            },
+            ".subtitle":{
+                marginTop:"30px",
+                fontFamily:"Monospace",
+                fontSize:"1.3rem",
+                borderBottom:"dotted black 2px",
+                width:"fit-content",
+                marginBottom:"15px",
+                fontWeight:"bold",
+            }
         },
     }
     )
