@@ -1,5 +1,6 @@
 import {Typography,Grid,makeStyles} from '@material-ui/core'
 import schoolPicture from '../images/calstateLogo.png'
+import portLand from '../images/portland.jpg'
 import SkillBox from './skillbox'
 import {useEffect} from 'react'
 
@@ -53,7 +54,21 @@ const useStyles = makeStyles((theme)=>({
         width:"65%",
         [theme.breakpoints.down('sm')]:{
             width:"90%",
-        }
+        },
+        paddingBottom:"20px",
+    },
+    parallaxImage:
+    {
+        backgroundImage:`url(${portLand})`,
+        backgroundSize:"cover",
+        backgroundAttachment:"fixed",
+        backgroundPosition:"center",
+        minHeight:"450px",
+        width:"100%",
+        height:"50%",
+        filter:"brightness(50%) blur(1px)",
+        transform:"translateZ(1px)",
+        overflow:"hidden",
     }
 }));
 
@@ -145,7 +160,7 @@ function Aboutv2(){
                     is Terry Davis and Linus Torvalds. Their desire to create something for fun and then turning them into full blown Operating Systems is really cool.
                 </Typography>
             </Grid>
-            
+            <Grid className={classes.parallaxImage}/>
     </Grid>
     )
 }
