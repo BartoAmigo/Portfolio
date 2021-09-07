@@ -1,6 +1,27 @@
 import {Typography,Grid,makeStyles} from '@material-ui/core'
 import schoolPicture from '../images/calstateLogo.png'
+import SkillBox from './skillbox'
+import {useEffect} from 'react'
 
+const skills = [
+    {
+        Title:"Programming Languages",
+        Items:["C++","C#","C","Python"]
+    },
+    {
+        Title:"Database Languages",
+        Items:["SQL","PHP","NoSQL"]
+    },
+    {
+        Title:"Web Programming",
+        Items:["HTML","CSS","Javascript"]
+    },
+    {
+        Title:"Tools",
+        Items:["Git","MongoDB","Mysql","AWS","AdobeXD","NodeJS"]
+    },
+]
+    
 const useStyles = makeStyles((theme)=>({
     root:{
         marginTop:"35px",
@@ -22,10 +43,26 @@ const useStyles = makeStyles((theme)=>({
             flexDirection:"column",
         }   
     },
+    skillBoxesContainer:{
+        [theme.breakpoints.down('xs')]:{
+            flexDirection:"column",
+            alignItems:"center",
+        },
+    },
+    summaryBox:{
+        width:"65%",
+        [theme.breakpoints.down('sm')]:{
+            width:"90%",
+        }
+    }
 }));
 
 
 function Aboutv2(){
+
+    useEffect(()=>{
+    })
+
     const classes = useStyles(); 
     return(
     <Grid container 
@@ -45,7 +82,6 @@ function Aboutv2(){
         </Grid>
             <Grid item>
                 <Typography
-                variant="h6"
                  className="subtitle"
                  >
                     Education
@@ -83,6 +119,33 @@ function Aboutv2(){
                      Skills
                  </Typography>
             </Grid>
+            <Grid item 
+            container 
+            className={classes.skillBoxesContainer}
+            justifyContent="center"
+            >
+                {skills.map((skill)=>{
+                    return(
+                        <SkillBox title={skill.Title} skills={skill.Items}/>
+                    )})}
+            </Grid>
+            <Grid item>
+                <Typography className="subtitle">Summary</Typography>
+            </Grid>
+            <Grid item container
+            className={classes.summaryBox}
+            justifyContent="center"
+            >
+                <Typography>
+                    Hi, my name is Bartholomew Falzarano, but everybody just calls me Bart. I have tinkered with computers for most of my life.
+                    I have taken computers apart that still had ribbons(old wiring for computers), and I have hacked the software on a PSP. 
+                    I have a strong interest in getting in Operating Systems because manipulating a system sounds really fun. However, I love everything
+                    programming, to me it's all fun! I've coded projects in almost every level of language except binary because that is pretty hard to do (Yes, I
+                    have coded in assembly and yes I enjoyed it). I have a admiration for Linux and would prefer to use Linux more than Windows. My role models for programming 
+                    is Terry Davis and Linus Torvalds. Their desire to create something for fun and then turning them into full blown Operating Systems is really cool.
+                </Typography>
+            </Grid>
+            
     </Grid>
     )
 }

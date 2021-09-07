@@ -13,9 +13,9 @@ const useStyles = makeStyles((theme)=>({
 
     },
     title:{
-        color:theme.palette.primary.main,
+        color:"black",
         flexGrow:1,
-        fontFamily:"bookman",
+        fontFamily:"monospace"
     },
     menuItem:{
         
@@ -40,7 +40,7 @@ function Navbar(){
     return(
         <AppBar elevation={7} position="sticky" color="secondary">
             <Toolbar>
-                <IconButton edge="start" onClick={handleMenu} color="primary">
+                <IconButton edge="start" onClick={handleMenu}>
                     <MenuIcon/>
                 </IconButton>
                 <Typography variant="h6" className={classes.title} align="center">
