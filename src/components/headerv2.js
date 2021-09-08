@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme)=>({
     foreGround:{
         position:"absolute",
         marginTop:"65px",
-        transform:"translateZ(2px)",
+        zIndex:1,
         color:"white",
         
     },
@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme)=>({
         width:"100%",
         height:"50%",
         filter:"brightness(50%) blur(1px)",
-        transform:"translateZ(1px)",
         overflow:"hidden",
 
     }
@@ -42,6 +41,7 @@ const useStyles = makeStyles((theme)=>({
 
 function Headerv2(){
     const classes = useStyles(); 
+    
     return(
     <Grid 
     container 

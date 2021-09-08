@@ -1,7 +1,5 @@
 import {makeStyles,Typography,Grid} from '@material-ui/core'
 import PropTypes from 'prop-types'
-import {useEffect} from 'react'
-
 const useStyles = makeStyles((theme)=>({
     root:{
         marginTop:"20px",

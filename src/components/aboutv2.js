@@ -2,7 +2,6 @@ import {Typography,Grid,makeStyles} from '@material-ui/core'
 import schoolPicture from '../images/calstateLogo.png'
 import portLand from '../images/portland.jpg'
 import SkillBox from './skillbox'
-import {useEffect} from 'react'
 
 const skills = [
     {
@@ -75,10 +74,8 @@ const useStyles = makeStyles((theme)=>({
 
 function Aboutv2(){
 
-    useEffect(()=>{
-    })
-
     const classes = useStyles(); 
+
     return(
     <Grid container 
     id="About" 
@@ -154,7 +151,7 @@ function Aboutv2(){
                 <Typography>
                     Hi, my name is Bartholomew Falzarano, but everybody just calls me Bart. I have tinkered with computers for most of my life.
                     I have taken computers apart that still had ribbons(old wiring for computers), and I have hacked the software on a PSP. 
-                    I have a strong interest in getting in Operating Systems because manipulating a system sounds really fun. However, I love everything
+                    I have a strong interest in learning about Operating Systems because manipulating a system sounds really fun. However, I love everything about
                     programming, to me it's all fun! I've coded projects in almost every level of language except binary because that is pretty hard to do (Yes, I
                     have coded in assembly and yes I enjoyed it). I have a admiration for Linux and would prefer to use Linux more than Windows. My role models for programming 
                     is Terry Davis and Linus Torvalds. Their desire to create something for fun and then turning them into full blown Operating Systems is really cool.
