@@ -5,10 +5,12 @@ import Paper from '@material-ui/core/Paper'
 
 const useStyles = makeStyles((theme)=>({
     root:{
-        marginTop:"35px"
+        marginTop:"35px",
+        paddingBottom:"100px",
     },
     paper:{
-        width:"300px",
+        width:"500px",
+        padding:"10px",
     }
 }))
 
@@ -17,7 +19,7 @@ function Contact()
 {
     const classes = useStyles(); 
     return(
-    <Grid item container
+    <Grid container
     id="Contact"
     className={classes.root}
     direction="column"
@@ -29,7 +31,23 @@ function Contact()
         </Grid>
         <Grid item>
             <Paper className={classes.paper}>
-                Hi
+               <Grid item container direction="column">
+                   <Grid item>
+                       <Typography variant="h5" align="center">Bart Falzarano</Typography>
+                   </Grid>
+                   <Grid item>
+                       <div style={{borderBottom:"solid black 2px", width:"100%", marginTop:"5px"}}/>
+                    </Grid> 
+                    <Grid item>
+                        <Typography align="center">
+                            Email: bartfalzaranoiii@gmail.com
+                        </Typography>
+                        <Typography align="center">
+                            Phone: 7604729205
+                        </Typography>
+                    </Grid>
+
+               </Grid>
             </Paper>
         </Grid>
     </Grid>
