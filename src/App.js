@@ -7,6 +7,7 @@ import GlobalStyles from './globalStyles';
 import Headerv2 from './components/headerv2'
 import Aboutv2 from './components/aboutv2'
 import Projects from './components/projects'
+import Contact from './components/contact'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Headerv2/>
       <Aboutv2/>
       <Projects/>
+      <Contact/>
     </ThemeProvider>
   );
 }
