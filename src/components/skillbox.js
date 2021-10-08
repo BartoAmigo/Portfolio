@@ -25,7 +25,7 @@ return(
         direction="column"
         className={classes.skillBox}
         >
-            <Grid item>
+            <Grid item>y
                 <Typography align="center"><u>{title}</u></Typography>
             </Grid>
             <Grid item container alignItems="center" justifyContent="center" direction="column">
