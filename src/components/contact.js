@@ -2,6 +2,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 import {makeStyles} from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
+import {Phone,Email} from '@material-ui/icons'
 
 const useStyles = makeStyles((theme)=>({
     root:{
@@ -11,6 +12,9 @@ const useStyles = makeStyles((theme)=>({
     paper:{
         width:"500px",
         padding:"10px",
+    },
+    icons:{
+        marginRight:"10px",
     }
 }))
 
@@ -29,26 +33,33 @@ function Contact()
         <Grid item>
             <Typography className="title">Contact Me</Typography>
         </Grid>
-        <Grid item>
-            <Paper className={classes.paper}>
-               <Grid item container direction="column">
-                   <Grid item>
-                       <Typography variant="h5" align="center">Bart Falzarano</Typography>
-                   </Grid>
-                   <Grid item>
-                       <div style={{borderBottom:"solid black 2px", width:"100%", marginTop:"5px"}}/>
-                    </Grid> 
-                    <Grid item>
-                        <Typography align="center">
-                            Email: bartfalzaranoiii@gmail.com
-                        </Typography>
-                        <Typography align="center">
-                            Phone: 7604729205
-                        </Typography>
-                    </Grid>
-
-               </Grid>
-            </Paper>
+        <Grid item container 
+        direction="column"
+        alignItems="center"
+        >
+            <Grid item container
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+            >
+                <Grid item>
+                    <Email className={classes.icons}/>
+                </Grid>
+                <Grid item>
+                    <Typography variant="h5">bartfalzaranoiii@gmail.com</Typography>
+                </Grid>
+            </Grid>
+            <Grid item container
+            direction="row"
+            alignItems="center"
+            justifyContent="center">
+                <Grid item>
+                    <Phone className={classes.icons} fontSize="medium"/>
+                </Grid>
+                <Grid item>
+                    <Typography variant="h5">760-472-9205</Typography>
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
     )
