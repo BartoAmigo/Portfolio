@@ -1,29 +1,31 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c821173b.chunk.css",
-    "main.js": "/Portfolio/static/js/main.29fbe762.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.29fbe762.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.5236f2f1.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.5236f2f1.js.map",
-    "static/js/2.e731c136.chunk.js": "/Portfolio/static/js/2.e731c136.chunk.js",
-    "static/js/2.e731c136.chunk.js.map": "/Portfolio/static/js/2.e731c136.chunk.js.map",
-    "static/js/3.61e21b13.chunk.js": "/Portfolio/static/js/3.61e21b13.chunk.js",
-    "static/js/3.61e21b13.chunk.js.map": "/Portfolio/static/js/3.61e21b13.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.c371331a.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c371331a.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.a9fcb43d.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.a9fcb43d.js.map",
+    "static/js/2.b90af773.chunk.js": "/Portfolio/static/js/2.b90af773.chunk.js",
+    "static/js/2.b90af773.chunk.js.map": "/Portfolio/static/js/2.b90af773.chunk.js.map",
+    "static/js/3.36fe79e4.chunk.js": "/Portfolio/static/js/3.36fe79e4.chunk.js",
+    "static/js/3.36fe79e4.chunk.js.map": "/Portfolio/static/js/3.36fe79e4.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/main.c821173b.chunk.css.map": "/Portfolio/static/css/main.c821173b.chunk.css.map",
-    "static/js/2.e731c136.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.e731c136.chunk.js.LICENSE.txt",
+    "static/js/2.b90af773.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.b90af773.chunk.js.LICENSE.txt",
     "static/media/AngularGrid.dbf74b01.png": "/Portfolio/static/media/AngularGrid.dbf74b01.png",
     "static/media/calstateLogo.ac3fcf69.png": "/Portfolio/static/media/calstateLogo.ac3fcf69.png",
+    "static/media/emailapp.d121e371.png": "/Portfolio/static/media/emailapp.d121e371.png",
     "static/media/oceanside.64e18fa3.jpg": "/Portfolio/static/media/oceanside.64e18fa3.jpg",
     "static/media/oregonforest.f4f3c6a0.jpg": "/Portfolio/static/media/oregonforest.f4f3c6a0.jpg",
     "static/media/portland.1c525cb5.jpg": "/Portfolio/static/media/portland.1c525cb5.jpg",
     "static/media/profileimg.05abfe7a.jpg": "/Portfolio/static/media/profileimg.05abfe7a.jpg",
+    "static/media/recipefinder.ee7f898a.png": "/Portfolio/static/media/recipefinder.ee7f898a.png",
     "static/media/ticTacToe.dcb4e279.png": "/Portfolio/static/media/ticTacToe.dcb4e279.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5236f2f1.js",
-    "static/js/2.e731c136.chunk.js",
+    "static/js/runtime-main.a9fcb43d.js",
+    "static/js/2.b90af773.chunk.js",
     "static/css/main.c821173b.chunk.css",
-    "static/js/main.29fbe762.chunk.js"
+    "static/js/main.c371331a.chunk.js"
   ]
 }
