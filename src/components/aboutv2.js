@@ -138,7 +138,7 @@ function Aboutv2(){
             >
                 {skills.map((skill)=>{
                     return(
-                        <SkillBox title={skill.Title} skills={skill.Items}/>
+                        <SkillBox key={skill.Title} title={skill.Title} skills={skill.Items}/>
                     )})}
             </Grid>
             <Grid item>

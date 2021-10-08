@@ -10,6 +10,7 @@ import GridPhoto from '../images/AngularGrid.png'
 import autoClicker from '../images/autoClicker.png' 
 import tictactoe from '../images/ticTacToe.png' 
 import oceanside from '../images/oceanside.jpg'
+import {useState} from 'react'
 
 const projectItems = [
     {
@@ -37,7 +38,7 @@ const projectItems = [
         Description:"Just a basic vanilla javascript TicTacToe game. I also implemented a counter.",
     },
     {
-        Title:"AutoClciker",
+        Title:"AutoClicker",
         Photo:`${autoClicker}`,
         Link:"https://github.com/BartoAmigo/AutoClicker",
         Description:"A C++ WinForm Application where you set a speed of a click in microseconds. The program will then click for you at a certain speed.",
@@ -66,12 +67,32 @@ const useStyles = makeStyles((theme)=>({
         filter:"brightness(50%) blur(1px)",
         transform:"translateZ(1px)",
         overflow:"hidden",
+    },
+    projectItemContainer:{
+        paddingBottom:"100px",
     }
 }))
 
 
 function Projects(){
+    const [currentProjectIndex,setCurrentProjectIndex] = useState(0); 
     const classes = useStyles();
+
+
+    const handlePrev = () =>{
+        if(currentProjectIndex===0)
+        return; 
+        else{
+            setCurrentProjectIndex(currentProjectIndex-1); 
+        }
+    }
+    const handleNext = () => {
+        if(currentProjectIndex===projectItems.length-1)
+        return; 
+        else{
+            setCurrentProjectIndex(currentProjectIndex+1); 
+        }
+    }
 
     return(
         <Grid container
@@ -108,16 +129,17 @@ function Projects(){
                 container 
                 direction="column"
                 alignItems="center"
+                className={classes.projectItemContainer}
                 >
                     {/*I want to display a img then i want to display image controls*/}
-                   <ProjectItem Title = {projectItems[1].Title} 
-                   Photo = {projectItems[1].Photo}
-                   Link = {projectItems[1].Link} 
-                   Description = {projectItems[1].Description}
-                   />
+                    <ProjectItem Title={projectItems[currentProjectIndex].Title} 
+                    Photo={projectItems[currentProjectIndex].Photo}
+                    Link = {projectItems[currentProjectIndex].Link}
+                    Description = {projectItems[currentProjectIndex].Description}/>
+
                     <Grid item>
-                        <Button>Prev</Button>
-                        <Button>Next</Button>
+                        <Button onClick={handlePrev}>Prev</Button>
+                        <Button onClick={handleNext}>Next</Button>
                     </Grid>
                 </Grid>
             </Grid>

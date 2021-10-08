@@ -6,6 +6,9 @@ const useStyles= makeStyles((theme) => ({
     img:{
         width:"30%",
         height:"auto",
+    },
+    container:{
+        paddingTop:"50px",
     }
 }))
 
@@ -19,7 +22,8 @@ function ProjectItem(props){
     return(
         <Grid item container
         direction="column"
-        alignItems="center">
+        alignItems="center"
+        className={classes.container}>
             <Typography variant="h6">Project: {Title}</Typography>
             <a href={Link}>Link</a>
             <img className={classes.img} src={Photo}/>

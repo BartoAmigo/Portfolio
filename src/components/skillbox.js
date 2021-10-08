@@ -31,7 +31,7 @@ return(
             <Grid item container alignItems="center" justifyContent="center" direction="column">
                 {skills.map((skill)=>{
                     return(
-                        <Grid item>
+                        <Grid key={skill} item>
                             {skill}
                         </Grid>
                     );
