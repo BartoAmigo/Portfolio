@@ -10,13 +10,15 @@ import GridPhoto from '../images/AngularGrid.png'
 import autoClicker from '../images/autoClicker.png' 
 import tictactoe from '../images/ticTacToe.png' 
 import oceanside from '../images/oceanside.jpg'
+import emailApp from '../images/emailapp.png'
+import recipefinder from '../images/recipefinder.png'
 import {ArrowLeft,ArrowRight} from '@material-ui/icons'
 import {useState} from 'react'
 
 const projectItems = [
     {
         Title:"Email Verification",
-        Photo:"nothing",
+        Photo:`${emailApp}`,
         Link:"https://github.com/BartoAmigo/EmailVerificationwPHP",
         Description:"Uses HTML to create a form and javascript to handle all of the actions. I use PHP to communicate with my mySQL database, and PHP to check verification status."
     },
@@ -28,7 +30,7 @@ const projectItems = [
     },
     {
         Title:"Food Recipe Finder", 
-        Photo:"Hi",
+        Photo:`${recipefinder}`,
         Link:"https://github.com/BartoAmigo/RecipeFinder",
         Description:"Create a React App that is able to grab recipes from a REST api. I use vanilla CSS and create a Recipe component to contain each recipe.",
     },
