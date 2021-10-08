@@ -4,8 +4,8 @@ import {makeStyles} from '@material-ui/core/styles'
 
 const useStyles= makeStyles((theme) => ({
     img:{
-        width:"30%",
-        height:"auto",
+        width:"auto",
+        height:"200px",
     },
     container:{
         paddingTop:"50px",

@@ -10,6 +10,7 @@ import GridPhoto from '../images/AngularGrid.png'
 import autoClicker from '../images/autoClicker.png' 
 import tictactoe from '../images/ticTacToe.png' 
 import oceanside from '../images/oceanside.jpg'
+import {ArrowLeft,ArrowRight} from '@material-ui/icons'
 import {useState} from 'react'
 
 const projectItems = [
@@ -70,11 +71,17 @@ const useStyles = makeStyles((theme)=>({
     },
     projectItemContainer:{
         paddingBottom:"100px",
+    },
+    buttonGroup:{
+        marginTop:"15px", 
     }
 }))
 
 
 function Projects(){
+
+
+
     const [currentProjectIndex,setCurrentProjectIndex] = useState(0); 
     const classes = useStyles();
 
@@ -93,6 +100,7 @@ function Projects(){
             setCurrentProjectIndex(currentProjectIndex+1); 
         }
     }
+
 
     return(
         <Grid container
@@ -124,6 +132,10 @@ function Projects(){
                     <Typography variant="h6">GitHub</Typography>
                 </Grid>
             </Grid>
+            <Grid item className={classes.buttonGroup}>
+                        <Button onClick={handlePrev} ><ArrowLeft fontSize="large"/></Button>
+                        <Button onClick={handleNext} ><ArrowRight fontSize="large"/></Button>
+                    </Grid>
             <Grid item>
                 <Grid item 
                 container 
@@ -136,11 +148,6 @@ function Projects(){
                     Photo={projectItems[currentProjectIndex].Photo}
                     Link = {projectItems[currentProjectIndex].Link}
                     Description = {projectItems[currentProjectIndex].Description}/>
-
-                    <Grid item>
-                        <Button onClick={handlePrev}>Prev</Button>
-                        <Button onClick={handleNext}>Next</Button>
-                    </Grid>
                 </Grid>
             </Grid>
             <Grid item className={classes.parallaxImage}/>
