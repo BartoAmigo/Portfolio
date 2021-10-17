@@ -1,10 +1,11 @@
 
 import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography' 
 import IconButton from '@material-ui/core/IconButton'
 import Button from '@material-ui/core/Button'
 import {makeStyles} from '@material-ui/core/styles'
-import  GitHubIcon from '@material-ui/icons/GitHub'
+import GitHubIcon from '@material-ui/icons/GitHub'
 import ProjectItem from './projectitem'
 import GridPhoto from '../images/AngularGrid.png'
 import autoClicker from '../images/autoClicker.png' 
@@ -12,7 +13,7 @@ import tictactoe from '../images/ticTacToe.png'
 import oceanside from '../images/oceanside.jpg'
 import emailApp from '../images/emailapp.png'
 import recipefinder from '../images/recipefinder.png'
-import {ArrowLeft,ArrowRight} from '@material-ui/icons'
+import {ArrowLeft,ArrowRight,HelpOutline} from '@material-ui/icons'
 import {useState} from 'react'
 
 const projectItems = [
@@ -56,7 +57,26 @@ const useStyles = makeStyles((theme)=>({
         marginTop:"35px",
     },
     paper:{
-        flexGrow:1
+        width:"500px",
+        height:"500px",
+        backgroundColor:`${theme.palette.secondary.main}`,
+        [theme.breakpoints.down("xs")]:{
+            width:"90%",
+        },
+    },
+    phoneScreenContainer:{
+        marginTop:"40px",
+        height:"325px",
+        width:"80%",
+        backgroundSize:"cover",
+        border:"solid black 2px",
+        padding:"10px",
+        backgroundColor:"white",
+    },
+    projectImg:{
+        width:"100%",
+        height:"100%",
+        objectFit:"contain",
     },
     parallaxImage:
     {
@@ -76,6 +96,10 @@ const useStyles = makeStyles((theme)=>({
     },
     buttonGroup:{
         marginTop:"15px", 
+    },
+    buttons:{
+        marginLeft:"5px",
+        marginRight:"5px",
     }
 }))
 
@@ -134,7 +158,56 @@ function Projects(){
                     <Typography variant="h6">GitHub</Typography>
                 </Grid>
             </Grid>
-            <Grid item className={classes.buttonGroup}>
+            {/*NEW Project Selector*/}
+            <Grid item container 
+            className={classes.projectItemContainer}
+            justifyContent="center"
+            alignItems="center"
+            >
+                <Paper className={classes.paper}>
+                    <Grid item container
+                    direction="column"
+                    justifyContent="center"
+                    alignItems="center"
+                    >
+                        <Grid item
+                        className={classes.phoneScreenContainer}
+                        > 
+                        <img className={classes.projectImg} src={projectItems[currentProjectIndex].Photo}/>
+                        </Grid> 
+                        <Grid item
+                        style={{marginTop:"5px"}}>
+                            <Typography variant="h5">
+                                {projectItems[currentProjectIndex].Title}
+                            </Typography>
+                        </Grid>
+                        <Grid item container 
+                        justifyContent="center"
+                        style={{marginTop:"5px"}}
+                        >
+                            <Button className={classes.buttons}
+                            variant="outlined"
+                            onClick={handlePrev}>
+                                <ArrowLeft fontSize="large"/>
+                            </Button>
+                            <Button className={classes.buttons}
+                            variant="outlined">
+                                <HelpOutline fontSize="large"/>
+                            </Button>
+                            <Button className={classes.buttons}
+                            variant="outlined"
+                            onClick={handleNext}>
+                                <ArrowRight fontSize="large"/>
+                            </Button>
+                        </Grid>
+                    </Grid>
+                </Paper>
+            </Grid>
+
+            
+            {
+
+            /*<Grid item className={classes.buttonGroup}>
                         <Button onClick={handlePrev} ><ArrowLeft fontSize="large"/></Button>
                         <Button onClick={handleNext} ><ArrowRight fontSize="large"/></Button>
                     </Grid>
@@ -145,13 +218,14 @@ function Projects(){
                 alignItems="center"
                 className={classes.projectItemContainer}
                 >
-                    {/*I want to display a img then i want to display image controls*/}
+                    {I want to display a img then i want to display image controls}
                     <ProjectItem Title={projectItems[currentProjectIndex].Title} 
                     Photo={projectItems[currentProjectIndex].Photo}
                     Link = {projectItems[currentProjectIndex].Link}
                     Description = {projectItems[currentProjectIndex].Description}/>
                 </Grid>
             </Grid>
+            */}
             <Grid item className={classes.parallaxImage}/>
         </Grid>
     )

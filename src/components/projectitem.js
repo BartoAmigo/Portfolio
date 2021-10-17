@@ -26,7 +26,7 @@ function ProjectItem(props){
         className={classes.container}>
             <Typography variant="h6">Project: {Title}</Typography>
             <a href={Link}>Link</a>
-            <img className={classes.img} src={Photo}/>
+            <img className={classes.img} src={Photo} alt={Title}/>
             <Typography><u><b>Summary</b></u>:{Description}</Typography>
         </Grid>
     )

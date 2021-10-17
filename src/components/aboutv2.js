@@ -149,12 +149,11 @@ function Aboutv2(){
             justifyContent="center"
             >
                 <Typography>
-                    Hi, my name is Bartholomew Falzarano, but everybody just calls me Bart. I have tinkered with computers for most of my life.
-                    I have taken computers apart that still had ribbons(old wiring for computers), and I have hacked the software on a PSP. 
-                    I have a strong interest in learning about Operating Systems because manipulating a system sounds really fun. However, I love everything about
-                    programming, to me it's all fun! I've coded projects in almost every level of language except binary because that is pretty hard to do (Yes, I
-                    have coded in assembly and yes I enjoyed it). I have a admiration for Linux and would prefer to use Linux more than Windows. My role models for programming 
-                    is Terry Davis and Linus Torvalds. Their desire to create something for fun and then turning them into full blown Operating Systems is really cool.
+                    Welcome! This is a website to showcase some of my projects. I created this website using React and MaterialUI. 
+                    Everyday, I am trying to learn more about programming so that I can build prototypes of things I want to create. I don't 
+                    have a particular goal in mind for what I want to create, but I am interested in operating systems. Right now, I'm trying to 
+                    learn web programming because of the increase in popularity in the past couple years. If I'm not programming, I am either hiking or skateboarding.
+                    I also like to go to the library and read. I hope all of you enjoy my website and have a good day! 
                 </Typography>
             </Grid>
             <Grid className={classes.parallaxImage}/>
