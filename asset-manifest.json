@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c821173b.chunk.css",
-    "main.js": "/Portfolio/static/js/main.c371331a.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.c371331a.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.a9fcb43d.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.a9fcb43d.js.map",
-    "static/js/2.b90af773.chunk.js": "/Portfolio/static/js/2.b90af773.chunk.js",
-    "static/js/2.b90af773.chunk.js.map": "/Portfolio/static/js/2.b90af773.chunk.js.map",
-    "static/js/3.36fe79e4.chunk.js": "/Portfolio/static/js/3.36fe79e4.chunk.js",
-    "static/js/3.36fe79e4.chunk.js.map": "/Portfolio/static/js/3.36fe79e4.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.b0baa7f6.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.b0baa7f6.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.7e1a9236.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.7e1a9236.js.map",
+    "static/js/2.5d21e544.chunk.js": "/Portfolio/static/js/2.5d21e544.chunk.js",
+    "static/js/2.5d21e544.chunk.js.map": "/Portfolio/static/js/2.5d21e544.chunk.js.map",
+    "static/js/3.7a5c38c8.chunk.js": "/Portfolio/static/js/3.7a5c38c8.chunk.js",
+    "static/js/3.7a5c38c8.chunk.js.map": "/Portfolio/static/js/3.7a5c38c8.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/main.c821173b.chunk.css.map": "/Portfolio/static/css/main.c821173b.chunk.css.map",
-    "static/js/2.b90af773.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.b90af773.chunk.js.LICENSE.txt",
+    "static/js/2.5d21e544.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.5d21e544.chunk.js.LICENSE.txt",
     "static/media/AngularGrid.dbf74b01.png": "/Portfolio/static/media/AngularGrid.dbf74b01.png",
     "static/media/calstateLogo.ac3fcf69.png": "/Portfolio/static/media/calstateLogo.ac3fcf69.png",
     "static/media/emailapp.d121e371.png": "/Portfolio/static/media/emailapp.d121e371.png",
@@ -23,9 +23,9 @@
     "static/media/ticTacToe.dcb4e279.png": "/Portfolio/static/media/ticTacToe.dcb4e279.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9fcb43d.js",
-    "static/js/2.b90af773.chunk.js",
+    "static/js/runtime-main.7e1a9236.js",
+    "static/js/2.5d21e544.chunk.js",
     "static/css/main.c821173b.chunk.css",
-    "static/js/main.c371331a.chunk.js"
+    "static/js/main.b0baa7f6.chunk.js"
   ]
 }
